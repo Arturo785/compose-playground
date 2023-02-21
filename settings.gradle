@@ -1,0 +1,17 @@
+pluginManagement {
+    ext.kotlin_version = '1.6.0'
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "composePlayground"
+include ':app'
