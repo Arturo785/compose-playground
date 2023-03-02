@@ -28,15 +28,7 @@ import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.Button
-import androidx.compose.material.Card
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Scaffold
-import androidx.compose.material.Snackbar
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.material.TextField
-import androidx.compose.material.rememberScaffoldState
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.*
@@ -123,8 +115,32 @@ class MainActivity : ComponentActivity() {
             // ScrollableColumn()
             //LazyList()
             // ConstraintLayoutUsage()
-            ComposeEffectHandlers().WithLaunchedEffect(viewModel)
+            //ComposeEffectHandlers().WithLaunchedEffect(viewModel)
+            /*    Column(Modifier.fillMaxSize()) {
+                    BoxAnimation()
+                    BoxAnimationBouncy()
+                }*/
 
+            UsageOfMotionLayout()
+
+        }
+    }
+
+    @Composable
+    fun UsageOfMotionLayout() {
+        Column {
+            var progress by remember {
+                mutableStateOf(0f)
+            }
+            ProfileHeader(progress = progress)
+            Spacer(modifier = Modifier.height(32.dp))
+            Slider(
+                value = progress,
+                onValueChange = {
+                    progress = it
+                },
+                modifier = Modifier.padding(horizontal = 32.dp)
+            )
         }
     }
 
