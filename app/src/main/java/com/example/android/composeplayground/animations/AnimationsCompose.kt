@@ -1,5 +1,6 @@
 package com.example.android.composeplayground
 
+import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.animateColor
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
@@ -25,7 +26,7 @@ fun BoxAnimation() {
 
     //this animates the size in a more smooth way
     val sizeAnim by animateDpAsState(
-        targetValue = sizeState,
+        targetValue = sizeState, // animates the current value up to the target value in a fine and smooth way automatically
         tween(
             durationMillis = 3000,
             delayMillis = 300,

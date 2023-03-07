@@ -1,4 +1,4 @@
-package com.example.android.composeplayground
+package com.example.android.composeplayground.states_and_effects
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -15,7 +15,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
-import androidx.lifecycle.LifecycleObserver
 import kotlinx.coroutines.flow.collectLatest
 
 class ComposeEffectHandlers {

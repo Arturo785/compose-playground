@@ -112,3 +112,21 @@ fun AnimateWithoutlayout(){
 
 
 }
+
+@Composable
+fun UsageOfMotionLayout() {
+    Column {
+        var progress by remember {
+            mutableStateOf(0f)
+        }
+        ProfileHeader(progress = progress)
+        Spacer(modifier = Modifier.height(32.dp))
+        Slider(
+            value = progress,
+            onValueChange = {
+                progress = it
+            },
+            modifier = Modifier.padding(horizontal = 32.dp)
+        )
+    }
+}

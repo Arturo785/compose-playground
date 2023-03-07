@@ -1,8 +1,8 @@
-package com.example.android.composeplayground
+package com.example.android.composeplayground.states_and_effects
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.android.composeplayground.LaunchEffectViewModel.ScreenEvents.ShowSnackBar
+import com.example.android.composeplayground.states_and_effects.LaunchEffectViewModel.ScreenEvents.ShowSnackBar
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch

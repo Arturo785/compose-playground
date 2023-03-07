@@ -1,4 +1,4 @@
-package com.example.android.composeplayground
+package com.example.android.composeplayground.states_and_effects
 
 import androidx.compose.material.Button
 import androidx.compose.material.Text

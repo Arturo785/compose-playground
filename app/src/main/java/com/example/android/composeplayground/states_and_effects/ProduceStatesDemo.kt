@@ -1,4 +1,4 @@
-package com.example.android.composeplayground
+package com.example.android.composeplayground.states_and_effects
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
